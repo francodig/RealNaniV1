@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <!--=============== BOOTSTRAP CSS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="./css/styles.css">
+
+      <title>Responsive card slider - Bedimcode</title>
+   </head>
+   <body>
+      <div id="top"></div>
+      <header>
+         <a href="#down"><button type="button" class="btn btn-outline-success bg-dark btnDown"><i class="bi bi-arrow-down"></i></button></a>
+         <nav class="navbar navbar-expand-lg">
+
+            <div class="container-fluid">
+               <a href="./index.html" class="navbar-brand">REAL NONI</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse d-xl-flex justify-content-between" id="navmenu">
+                  <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a href="./index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#section6" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#section2" class="nav-link">Products</a>
+                        </li>
+                  </ul>   
+                  <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a href="#section9" class="nav-link">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#section10" class="nav-link">The Farm</a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="bi bi-search"></i></a>
+                        </li>    
+                        <li>
+                           <a href="#"><i class="bi bi-bag-fill"></i></a>
+                        </li>  
+                        <li>
+                           <a href="#"><i class="bi bi-person-fill"></i></a>
+                        </li> 
+                  </ul>
+                  <ul class="navbar-nav1 d-lg-none">
+                     <a href="" class="navbarHeadings">Shop</a>
+                     <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <a href="">SHOP ALL</a>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              FEATURED
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="accordionList1">
+                                 <li>Bestsellers</li>
+                                 <li>Noni Fruit Leather</li>
+                                 <li>Skin Relief Set</li>
+                                 <li>Pain Relief Set</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              TOPICAL
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="accordionList2">
+                                 <li>For Skin Relief</li>
+                                 <li>For Pain Relief</li>
+                                 <li>Noni Bandage</li>
+                                 <li>Sets</li>
+                                 <li>For Pets</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              NOURISHMENT
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              <ul class="accordionList3">
+                                 <li>Noni Fruit Leather</li>
+                                 <li>Noni Honey</li>
+                                 <li>For Pets</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     <ul class="ourStory">
+                        <li>
+                           <a href="" class="navbarHeadings">Our Story</a>
+                        </li>
+                        <li>
+                           <a href="" class="navbarHeadings">What is Noni</a>
+                        </li>
+                        <li>
+                           <a href="" class="navbarHeadings">Journal</a>
+                        </li>
+                        <li>
+                           <a href="" class="navbarHeadings">Farm Tours</a>
+                        </li>
+                     </ul>
+                     <ul class="logIn">
+                        <li>
+                           <a href="" class="logItem">LOG IN</a>
+                        </li>
+                        <li>
+                           <a href="" class="logItem">CREATE AN ACCOUNT</a>
+                        </li>   
+                     </ul>
+
+                 
+                 </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+     <section id="section0">
+         <div class="container-fluid">
+            <div class="row">
+               <div id="colLeft" class="col-xl-7 col-md-6"></div>
+               <div id="colRight" class="col-xl-5 col-md-6">
+                     <h2 class="hidden">Say aloha to plant-powered healing.</h2>
+                     <h3 class="hidden">HAWAIIAN ORGANIC SUPERFOOD</h3>
+                     <p class="hidden">Trusted in Polynesian cultures for centuries, Raw Noni is one of nature's most abundant anti-inflammatory and antioxidant sources, giving the body what it needs to heal, renew, and thrive.</p>
+                     <button type="button" class="btn btn-outline-secondary hidden">LEARN MORE</button>
+               </div>
+            </div>
+         </div>
+      </section>      
+      <section id="section2">
+         <div class="container-fluid">
+            <div class="card__container swiper">
+                <h2>Potent, natural nourishment for feeling your best.</h2>
+               <div class="card__content">
+                  <div class="swiper-wrapper">
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/bottles.png" alt="image" class="card__img">
+                           <!-- <div class="card__shadow"></div> -->
+                        </div>
+                        <div class="card__data">
+                           <h3 class="card__name">Rapid Pain Relief Noni Lotion</h3>
+                           <!-- <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p> -->
+                           <button type="button" class="btn btn-outline-secondary buttonCard">SHOP NOW</button>
+                        </div>
+                     </article>
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./img/bottles.png" alt="image" class="card__img">
+                            <!-- <div class="card__shadow"></div> -->
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Rapid Pain Relief Noni Lotion</h3>
+                            <!-- <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p> -->
+                           <button type="button" class="btn btn-outline-secondary">SHOP NOW</button>
+                        </div>
+                     </article>
+                     <article class="card__article swiper-slide ">
+                        <div class="card__image">
+                            <img src="./img/bottles.png" alt="image" class="card__img">
+                            <!-- <div class="card__shadow"></div> -->
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Rapid Pain Relief Noni Lotion</h3>
+                            <!-- <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p> -->
+                           <button type="button" class="btn btn-outline-secondary">SHOP NOW</button>
+                        </div>
+                     </article>
+                     <article class="card__article swiper-slide ">
+                        <div class="card__image">
+                            <img src="./img/bottles.png" alt="image" class="card__img">
+                            <!-- <div class="card__shadow"></div> -->
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Rapid Pain Relief Noni Lotion</h3>
+                            <!-- <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p> -->
+                           <button type="button" class="btn btn-outline-secondary">SHOP NOW</button>
+                        </div>
+                     </article>
+                     <article class="card__article swiper-slide ">
+                        <div class="card__image">
+                            <img src="./img/bottles.png" alt="image" class="card__img">
+                            <!-- <div class="card__shadow"></div> -->
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">Rapid Pain Relief Noni Lotion</h3>
+                            <!-- <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p> -->
+         
+                           <button type="button" class="btn btn-outline-secondary">SHOP NOW</button>
+                        </div>
+                  </div>
+               </div>
+
+               <!-- Navigation buttons -->
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+               
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
+
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+         <button id="btnSection2" type="button" class="btn btn-outline-secondary">SHOP BESTSELLERS</button>
+      </section>
+      <section id="section3">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 text">
+                  <div>
+                     <h3>OUR NONI FRUIT LEATHER</h3>
+                     <h4>Noni in its most</h4>
+                     <h4>powerful form.</h4>
+                     <button type="button" class="btn btn-outline-secondary">SHOP NOW</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="section4">
+         <div class="container-fluid">
+            <div class="potent bg-black">
+               <span>14X</span>
+               <p>MORE POTENT THAN NONI JUICE</p>
+            </div>
+            <div class="row">
+               <div id="col4Left" class="col-md-6">
+                  <div>
+                     <h3 class="hidden1">No one else uses raw, unfermented noni pulp like we do.</h3>
+                     <p class="hidden1">We perfected our low heat dehydration process through years of research, specifically to keep all the beneficial compounds of Noni intact. Independent lab research has shown our Noni Fruit Leather to be 14x more potent than Noni Juice. In its raw form, you'll get an abundance of benefits from just a small piece daily.</p>
+                     <button type="button" class="btn btn-outline-success hidden1">GET TO KNOW NONI</button>
+                  </div>
+               </div>
+               <div id="col4Right" class="col-md-6"></div>
+            </div>
+         </div>
+      </section>
+      <section id="section5">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 text">
+                  <div>
+                     <h3>ROOTED IN HAWAIʻI</h3>
+                     <h4>From Kauaʻi</h4>
+                     <h4>with love</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="section6">
+         <div class="container-fluid">
+            <div class="row">
+               <div id="col6Left" class="col-md-6">
+                  
+               </div>
+               <div id="col6Right" class="col-md-6">
+                  <div>
+                     <h3 class="hidden1">As a certified organic, family-run farm, our Noni goes directly from us to you—with love.</h3>
+                     <p class="hidden1">After discovering Noni on our land over 40 years ago, it's been our mission—and passion—to preserve its potency and share its power with you. We are meticulous during every step of the process, from picking to shipping, to ensure you're getting the best of the best.</p>
+                     <button type="button" class="btn btn-outline-success hidden1">GET TO KNOW NONI</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="section7">
+         <div class="container-fluid gx-0">
+            <div class="logos">
+               <div class="logos-slide">
+                  <ul>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                  </ul>
+               </div>
+               <div class="logos-slide">
+                  <ul>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                     <li><span>THE POWER OF NONI</span></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section id="section8">
+         <div class="container-fluid">
+            <!-- Swiper -->
+            <div class=" swiper mySwiper hola">
+               <div class="swiper-wrapper">
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbells</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+                  <div class="hola swiper-slide">
+                     <div class="phrases">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe amet molestiae impedit, in tempore eveniet sed fuga minus! Similique eius quas impedit, quae nesciunt labore doloremque sequi ut voluptas.</p>
+                           <span>William Campbell</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+      <section id="section9">
+         <div class="container-fluid">
+            <div class="row">
+                <h3>On the Journal</h3>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="img-fluid" src="./img/secOneImage.jpg" alt="">
+                        <div class="info">
+                            <h1>On the Journal</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam animis</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <h3>How to Shop for True Organic Products</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="img-fluid" src="./img/secOneImage.jpg" alt="">
+                        <div class="info">
+                            <h1>On the Journal</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam animi</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <h3>Earth Day Organics</h3>   
+                     <button type="button" class="btn btn1 btn-outline-success">SEE ALL POSTS</button>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="img-fluid" src="./img/secOneImage.jpg" alt="">
+                        <div class="info">
+                            <h1>On the Journal</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam animi</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <h3>Noni Holiday Gift Guide</h3>
+                    <button type="button" class="btn btn2 btn-outline-success">SEE ALL POSTS</button>     
+                </div>
+            </div>
+         </div>
+      </section>
+      <section id="section10">
+         <div class="container-fluid">
+            <div class="row">
+               <div id="col4Left" class="col-md-6">
+                  <div>
+                     <h3 class="hidden1">Experience the Farm</h3>
+                     <p class="hidden1">Get up close and personal with our favorite superfood on a complimentary tour of our family farm. Taste and experience our Organic Noni—and learn how you can implement our organic practices into your own home garden.</p>
+                     <button type="button" class="btn btn-outline-success hidden1">LEARN MORE</button>
+                  </div>
+               </div>
+               <div id="col4Right" class="col-md-6"></div>
+            </div>
+         </div>
+      </section>
+      <div id="down"></div>
+      <footer class="text-white">
+         <!-- Grid container -->
+        <div class="container-fluid">
+           <!--Grid row-->
+           <div class="row rowFooter1">
+               <!--Grid column-->
+               <div class="col-xl-2 col-lg-12 col1One">
+                  <div class="imgFooter">
+                     <a href="#top">
+                        <img src="./img/logo-nani.png" alt="" class="img-fluid">
+                     </a>
+                  </div>
+                  <div class="row rowInput2">
+                     <h3 class="text-uppercase">JOIN OUR ʻOHANA<h3>
+                     <div class="input-group  mb-3">
+                           <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                           <button class="btn" type="button" id="button-addon2">Send</button>
+                     </div>
+                  </div>
+               </div>
+             <!--Grid column-->
+               <div class="col-xl-6 col-lg-12 col2Two">
+                    <div class="row row1col2">
+                        <div class="col-lg-12 d-flex justify-content-start column11">
+                            <ul class="fa-ul">
+                                <h3>SHOP</h3>
+                                <a href="#"><li>
+                                 All Products
+                                </li></a>
+                                <a href="#"><li>
+                                 Fruit Leather
+                                </li></a>
+                                <a href="#"><li>
+                                 For Pain Relief
+                                </li></a>
+                                <a href="#"><li>
+                                 For Skin Relief
+                                </li></a>
+                                <a href="#"><li>
+                                 Noni Bandage
+                                </li></a>
+                                <a href="#"><li>
+                                 For Pets
+                                </li></a>
+                            </ul>  
+                            <ul class="fa-ul">
+                                <h3>EXPLORE</h3>
+                                <a href="#"><li>
+                                 Home
+                                </li></a>
+                                <a href="#"><li>
+                                 Our Story
+                                </li></a>
+                                <a href="#"><li>
+                                 What Is Noni
+                                </li></a>
+                                <a href="#"><li>
+                                 Store Locator
+                                 </li></a>
+                                 <a href="#"><li>
+                                 FAQ
+                                </li></a>
+                                <a href="#"><li>
+                                 Contact
+                                </li></a>
+                            </ul>  
+                            <ul class="fa-ul">
+                              <h3>CONNECT</h3>
+                              <li>
+                                 <a href="tel:8882192787">888-882-6664</a>
+                              </li>
+                              <li>
+                                 <ul class="iconsFooter">
+                                    <a href="https://www.linkedin.com" target="_blank"><li>
+                                       <i class="fa-brands fa-linkedin"></i>
+                                   </li></a>
+                                 
+                                   <a href="https://web.telegram.org" target="_blank"><li>
+                                       <i class="fa-brands fa-telegram"></i>
+                                   </li>
+                                   </a>
+                                   <a href="https://www.instagram.com" target="_blank"><li>
+                                       <i class="fa-brands fa-instagram"></i>
+                                   </li>
+                                   </a>
+                                    <a href="https://www.twitch.tv" target="_blank" ><li>
+                                    <i class="fa-brands fa-twitch"></i>
+                                   </li>
+                                   </a>
+                                 </ul>
+                              </li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="row row2col2">
+                        <div class="col-lg-12 column22">
+                            <ul class="d-flex justify-content-start">
+                                <a href=""><li>Made by Nice People</li></a>
+                                <a href=""><li>© Real Noni</li></a>
+                                <a href=""><li>Terms</li></a>
+                                <a href=""><li>Privacy</li></a>
+                                <a href=""><li>Shipping & Returns</li></a>
+                                <a href=""><li>CCPAs</li></a>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+             <!--Grid column-->
+               <div class="col-xl-4 col-lg-12 col3Three">
+                  <div class="row rowInput1">
+                     <h3 class="text-uppercase">JOIN OUR ʻOHANA<h3>
+                     <div class="input-group mb-3">
+                           <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                           <button class="btn" type="button" id="button-addon2">Send</button>
+                     </div>
+                  </div>
+                  <div class="imgFooter2">
+                        <img src="./img/REAL NONI.png" alt="">
+                  </div>
+               </div>       
+           </div>
+        </div>
+        <a href="#top"><button type="button" id="scrollButton" style="display: none;" class="btn btn-outline-success bg-light btnTop"><i class="bi bi-arrow-up"></i></button></a>
+       </footer>
+       <div id="down"></div>
+       
+
+
+
+
+
+
+
+      <!--=============== BOOTSTRAP JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="./js/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+      <!--=============== MAIN JS ===============-->
+      <script src="./js/main.js"></script>
+
+      <!--=============== FONT AWESOME===============-->
+      <script src="https://kit.fontawesome.com/b91837b334.js" crossorigin="anonymous"></script>
+   </body>
+</html>
